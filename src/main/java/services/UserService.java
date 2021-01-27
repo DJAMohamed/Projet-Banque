@@ -27,7 +27,7 @@ public class UserService {
 	}
 
 	public User findById(int id) {
-		return this.findById(id);
+		return this.users.get(id);
 	}
 	
 	public List<User> findByNom(String nom) {

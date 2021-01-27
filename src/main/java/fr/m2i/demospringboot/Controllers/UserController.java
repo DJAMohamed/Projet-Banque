@@ -42,7 +42,6 @@ public class UserController {
 	
 	@PutMapping("/{id}") //localhost:8080/users/id ---> Put
 	public User update(@PathVariable int id, @RequestBody User user) {
-
 		return this.service.update(id, user);
 	}
 	
